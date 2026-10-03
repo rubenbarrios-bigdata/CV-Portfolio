@@ -155,9 +155,9 @@ WITH raw_data AS (
     event_name,
     (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'contact_channel') AS contact_channel
   FROM
-    `rubenbarrios-analytics.analytics_cv_ejecutivo.events_*`
+    `talent-intelligence-career-tic.analytics_553518369.events_*`
   WHERE
-    _TABLE_SUFFIX BETWEEN '20260901' AND '20260930'
+    _TABLE_SUFFIX >= '20260901'
 ),
 
 clean_sessions AS (

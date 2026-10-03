@@ -8,6 +8,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rubén%20Barrios-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-barrios)
 [![GitHub](https://img.shields.io/badge/GitHub-rubenbarrios--bigdata-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rubenbarrios-bigdata)
 [![Telegram Bot Alerts](https://img.shields.io/badge/🤖%20Telegram%20Bot-Real--Time%20Alerts-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](#-sistema-de-telemetría-en-tiempo-real--alertas-vía-telegram-bot)
+[![Looker Studio Dashboard](https://img.shields.io/badge/📊%20Looker%20Studio-Audience%20%26%20Analytics-00d2ff?style=for-the-badge&logo=googlecloud&logoColor=white)](#-sección-de-telemetría--analítica-en-vivo-looker-studio--bigquery)
 
 <br>
 
@@ -40,6 +41,7 @@ El repositorio incluye el **CV completo en formato HTML nativo**, estructurado c
 | **Descarga Directa del Código HTML** | [`CV_Ruben_Barrios.html`](CV_Ruben_Barrios.html) | 📥 [Descargar archivo .html](https://raw.githubusercontent.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/main/CV_Ruben_Barrios.html) | Podés descargarlo y abrirlo con doble clic en cualquier navegador (Chrome, Edge, Safari, Firefox) sin necesidad de internet ni servidores. |
 | **Plan de Medición Digital (Excel)** | [Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx](Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | 📊 [Descargar Plan de Medición (.xlsx)](https://github.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/raw/main/Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | Tracking Plan Enterprise: Matriz de eventos GA4/GTM, variables DataLayer, definiciones personalizadas y SQL para BigQuery. |
 | **Modelos Analíticos SQL en BigQuery** | [`sql/`](sql/) & [`sql/README.md`](sql/README.md) | 🏛️ [Ver Modelos SQL](sql/README.md) | 6 modelos de datos en Google Cloud BigQuery: desanidado de eventos GA4, funnels de conversión, auditoría de bots y Data Quality. |
+| **Dashboard de Telemetría (Looker Studio)** | [Looker Studio Report](https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F) | 📊 [Ver en Looker Studio](https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F) | Dashboard Cloud en tiempo real embebido dentro del CV: 6 KPIs de audiencia, embudo limpio, calidad de tráfico humano vs bots y ranking por ciudad. |
 | **Versión en Documento PDF** | [`CV_Ruben_Barrios_Analista_De_Datos.pdf`](CV_Ruben_Barrios_Analista_De_Datos.pdf) | 📕 [Ver / Descargar PDF](https://github.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/raw/main/CV_Ruben_Barrios_Analista_De_Datos.pdf) | Documento tradicional listo para adjuntar en sistemas de selección ATS o procesos estándar. |
 
 > 💡 **Ventaja de un CV en HTML para un Analista de Datos**:
@@ -187,6 +189,26 @@ Contrato técnico para desarrollo frontend con funciones JavaScript wrappers y e
 
 ---
 
+### 13. Dashboard Ejecutivo de Audiencia & Telemetría en Looker Studio
+Visualización analítica en Looker Studio conectada directamente a Google Cloud BigQuery bajo arquitectura serverless. Monitorea en tiempo real el tráfico legítimo de reclutadores, conversiones y validación técnica:
+
+<div align="center">
+  <img src="screenshots/13_looker_studio_audience_analytics_dashboard.png" alt="Dashboard Ejecutivo Looker Studio - Telemetría y Audiencia" width="95%" style="border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+  <p><em>Panel en Looker Studio: 6 KPIs unificados en cian, evolución temporal limpia (DD/MM), embudo de conversión humano (123 sesiones), aislamiento de bots de datacenters (33.9%) y tabla con mapa de calor azul en cascada con los polos reales de reclutamiento (Buenos Aires, Silicon Valley, Ámsterdam, UK, New York).</em></p>
+</div>
+
+---
+
+### 14. Integración Embebida en el CV Inteligente & Dock de Contacto Rápido
+Incrustación nativa del informe de Looker Studio mediante un contenedor `<iframe>` 100% responsivo con soporte táctil, sincronizado con el nuevo acceso directo interactivo en la barra flotante de contactos:
+
+<div align="center">
+  <img src="screenshots/14_cv_embedded_analytics_section.png" alt="Sección de Analítica Embebida en el CV Ejecutivo" width="95%" style="border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+  <p><em>Sección interactiva dentro del CV: Insignia «En Vivo • BigQuery Serverless», píldoras tecnológicas, botón de pantalla completa y botón «Analítica» integrado en el dock flotante de contactos rápidos con scroll suave.</em></p>
+</div>
+
+---
+
 ## 🏗️ Arquitectura Técnica: Separación de Capas (Data Layer vs. Presentation)
 
 Como prueba del criterio analítico y de ingeniería de software, los datos del dashboard no están rígidamente acoplados al documento HTML. Se implementó una **arquitectura desacoplada**:
@@ -243,6 +265,161 @@ Para maximizar la visibilidad ante reclutadores técnicos y hiring managers en L
 
 3. **Publicación en el Feed de LinkedIn (Post de Alto Impacto)**:
    - Compartí una breve reflexión sobre por qué los analistas de datos deberían estructurar su experiencia orientada a KPIs y métricas cuantificables, adjuntando la captura en modo oscuro y el enlace a la versión interactiva.
+
+---
+
+## 📊 Sección de Telemetría & Analítica en Vivo (Looker Studio + BigQuery)
+
+El **CV Ejecutivo Inteligente** no solo presenta datos estáticos, sino que **embebe su propio pipeline analítico en tiempo real**. Los reclutadores y líderes técnicos pueden interactuar directamente con el dashboard de telemetría sin salir del currículum web.
+
+### 📐 Arquitectura del Pipeline Embebido:
+
+```mermaid
+flowchart TD
+    subgraph Frontend["1. Frontend & Captura (GitHub Pages)"]
+        A[Navegación del Reclutador] --> B[DataLayer Events JavaScript]
+        Dock[Barra Flotante: Botón Analítica] -.->|Scroll Suave con Blue Glow| Embed[Sección Embebida: iFrame Looker Studio]
+    end
+
+    subgraph TagManagement["2. Procesamiento & Medición"]
+        B --> C[Google Tag Manager GTM-P2Z4TZ4Z]
+        C --> D[Google Analytics 4 G-NQC5PHY67R]
+    end
+
+    subgraph BigQueryEngine["3. Data Warehouse Serverless"]
+        D -->|Export Diario / Streaming| E[("Google Cloud BigQuery<br>talent-intelligence-career-tic")]
+        E --> F[Vista SQL 04: Embudo Limpio]
+        E --> G[Vista SQL 06: Auditoría de Bots & Data Quality]
+    end
+
+    subgraph Visualization["4. Business Intelligence & Embebido"]
+        F & G --> H["Looker Studio Dashboard<br>CV Portfolio - Audience & Analytics"]
+        H -->|HTTPS iFrame Seguro Sandbox| Embed
+    end
+```
+
+---
+
+### 🧩 Estructura Técnica de la Integración:
+
+#### 1. Código HTML del Contenedor Embebido (`index.html`)
+El contenedor se implementa como una tarjeta nativa (`card analytics-section`) con atributos `notranslate` para proteger los términos técnicos, un badge dinámico con animación pulsante de servidor en vivo y un marco iframe securizado:
+
+```html
+<!-- Sección de Telemetría & Analítica en Vivo (Looker Studio / BigQuery) -->
+<section class="card analytics-section notranslate" translate="no" id="analyticsSection">
+    <div class="analytics-header">
+        <div class="analytics-title-group">
+            <h2 class="section-title">
+                <span class="section-title-left" id="analyticsTitle">
+                    <i class="fas fa-chart-line"></i>Telemetría & Analítica en Vivo
+                </span>
+            </h2>
+            <p class="analytics-subtitle" id="analyticsSubtitle">
+                Dashboard ejecutivo en tiempo real con datos de Google Cloud BigQuery, Google Tag Manager y GA4
+            </p>
+        </div>
+        <div class="analytics-badge-live">
+            <span class="status-dot-pulse"></span>
+            <span id="analyticsLiveBadge">En Vivo • BigQuery Serverless</span>
+        </div>
+    </div>
+
+    <!-- Contenedor Responsivo del iFrame de Looker Studio -->
+    <div class="analytics-iframe-container">
+        <iframe 
+            id="lookerStudioIframe"
+            title="CV Portfolio - Audience & Analytics"
+            src="https://datastudio.google.com/embed/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F" 
+            frameborder="0" 
+            style="border:0; width:100%; height:100%;" 
+            allowfullscreen 
+            sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Barra Inferior de Tecnologías y Apertura en Pantalla Completa -->
+    <div class="analytics-footer">
+        <div class="analytics-tech-pills">
+            <span class="tech-pill"><i class="fas fa-database"></i> BigQuery SQL</span>
+            <span class="tech-pill"><i class="fas fa-tag"></i> GTM</span>
+            <span class="tech-pill"><i class="fas fa-chart-simple"></i> GA4 Telemetry</span>
+            <span class="tech-pill"><i class="fas fa-chart-pie"></i> Looker Studio</span>
+        </div>
+        <a href="https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F" target="_blank" rel="noopener" class="btn-analytics-fullscreen" id="btnAnalyticsFullscreen">
+            <i class="fas fa-arrow-up-right-from-square"></i> <span id="analyticsFullscreenText">Abrir en Pantalla Completa</span>
+        </a>
+    </div>
+</section>
+```
+
+#### 2. Estilos CSS & Optimización Responsive (`Desktop vs. Mobile`)
+El marco cuenta con diseño de cristal (*glassmorphism*), efecto de resplandor luminoso (*glow*) al navegar hacia él, y dimensiones adaptadas para evitar barras de desplazamiento dobles en smartphones:
+
+```css
+/* Contenedor del Iframe con Efecto Glassmorphism */
+.analytics-section {
+    position: relative;
+    border: 1px solid rgba(0, 210, 255, 0.22);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.analytics-iframe-container {
+    width: 100%;
+    height: 680px;
+    background: #0b1329;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Optimización Responsive para Móviles */
+@media (max-width: 768px) {
+    .analytics-iframe-container {
+        height: 520px;
+    }
+    .mobile-quick-dock .dock-btn {
+        flex: 1 1 0;
+        max-width: 16.66%;
+        padding: 8px 1px;
+    }
+    .mobile-quick-dock .dock-btn span {
+        font-size: 0.65rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+```
+
+#### 3. Barra Flotante de Acceso Rápido (`Quick Dock`) & Telemetría
+Se añadió el botón interactivo **«Analítica»** en la barra fija de contactos (`.mobile-quick-dock`), con distribución matemática equitativa del $16.66\%$ para los 6 accesos (*WhatsApp, Llamar, Email, LinkedIn, GitHub, Analítica*):
+
+```html
+<a href="#analyticsSection" class="dock-btn dock-analytics" onclick="trackAnalyticsClick('quick_dock'); scrollToTarget('analyticsSection'); return false;">
+    <i class="fas fa-chart-line"></i>
+    <span id="dockAnalyticsText">Analítica</span>
+</a>
+```
+
+Y su función asociada de telemetría client-side reactiva hacia `window.dataLayer`:
+
+```javascript
+function trackAnalyticsClick(source) {
+    if (typeof window.dataLayer !== 'undefined') {
+        window.dataLayer.push({
+            'event': 'cv_analytics_view',
+            'interaction_type': 'view_live_dashboard',
+            'source_trigger': source || 'quick_dock',
+            'timestamp': new Date().toISOString()
+        });
+    }
+}
+```
 
 ---
 

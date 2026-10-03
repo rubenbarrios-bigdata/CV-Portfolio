@@ -2747,6 +2747,226 @@
                 max-height: 140px;
             }
         }
+    
+        /* ========================================================
+           SECCIÓN DE ANALÍTICA & TELEMETRÍA EN VIVO (LOOKER STUDIO)
+           ======================================================== */
+        .analytics-section {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+            box-sizing: border-box;
+            background: var(--card-bg);
+            border: 1.5px solid rgba(56, 189, 248, 0.28);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        [data-theme="light"] .analytics-section {
+            border: 1.5px solid rgba(37, 99, 235, 0.25);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .analytics-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .analytics-title-group {
+            flex: 1 1 300px;
+        }
+
+        .analytics-subtitle {
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+            margin: 4px 0 0 0;
+            line-height: 1.45;
+        }
+
+        .analytics-badge-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1.5px solid rgba(56, 189, 248, 0.35);
+            border-radius: 20px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            color: #38bdf8;
+            white-space: nowrap;
+        }
+
+        .status-dot-pulse {
+            width: 8px;
+            height: 8px;
+            background-color: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #10b981;
+            animation: statusPulse 2s infinite ease-in-out;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+        }
+
+        .analytics-iframe-container {
+            position: relative;
+            width: 100%;
+            height: 680px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: #090f1e;
+            border: 1.5px solid rgba(56, 189, 248, 0.22);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+
+        .analytics-iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .analytics-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .analytics-tech-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .analytics-tech-pills .tech-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 14px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .btn-analytics-fullscreen {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 16px;
+            background: rgba(15, 43, 72, 0.6);
+            border: 1.5px solid rgba(56, 189, 248, 0.35);
+            border-radius: var(--radius-sm);
+            color: #38bdf8;
+            font-size: 0.80rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-analytics-fullscreen:hover {
+            background: rgba(56, 189, 248, 0.2);
+            border-color: #00d2ff;
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .dock-analytics,
+        a.dock-analytics,
+        a.dock-analytics:visited {
+            color: #38bdf8 !important;
+            font-weight: 700 !important;
+        }
+
+        .dock-analytics:hover,
+        .dock-analytics:active,
+        a.dock-analytics:hover,
+        a.dock-analytics:active {
+            color: #00d2ff !important;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.6) !important;
+        }
+
+        @media (max-width: 768px) {
+            .analytics-section {
+                padding: 16px 12px;
+                margin-top: 18px;
+                margin-bottom: 18px;
+            }
+            .analytics-iframe-container {
+                height: 520px;
+                -webkit-overflow-scrolling: touch;
+            }
+            .analytics-footer {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .btn-analytics-fullscreen {
+                width: 100%;
+                justify-content: center;
+                padding: 9px 14px;
+                font-size: 0.82rem;
+            }
+            .analytics-tech-pills {
+                justify-content: center;
+            }
+            .mobile-quick-dock {
+                bottom: 0 !important;
+                left: 0 !important;
+                transform: none !important;
+                width: 100% !important;
+                border-radius: 0 !important;
+                border-left: none !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                border-top: 1px solid var(--border) !important;
+                padding: 6px 0 calc(6px + env(safe-area-inset-bottom, 0px)) !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                gap: 0 !important;
+                box-sizing: border-box !important;
+            }
+            .dock-item,
+            a.dock-item,
+            a.dock-item:visited {
+                font-size: 0.54rem !important;
+                padding: 2px 0 !important;
+                gap: 2px !important;
+                flex: 1 1 0 !important;
+                width: 16.66% !important;
+                max-width: 16.66% !important;
+                min-width: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+            .dock-item span {
+                display: block !important;
+                width: 100% !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                white-space: nowrap !important;
+            }
+            .dock-item i {
+                font-size: 0.95rem !important;
+            }
+        }
+
     </style>
     
     <!-- Detección y Redirección Automática Responsive (Escritorio en PC, Móvil en Celulares) -->
@@ -3297,6 +3517,226 @@
                 font-size: 0.65rem !important;
             }
         }
+    
+        /* ========================================================
+           SECCIÓN DE ANALÍTICA & TELEMETRÍA EN VIVO (LOOKER STUDIO)
+           ======================================================== */
+        .analytics-section {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+            box-sizing: border-box;
+            background: var(--card-bg);
+            border: 1.5px solid rgba(56, 189, 248, 0.28);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        [data-theme="light"] .analytics-section {
+            border: 1.5px solid rgba(37, 99, 235, 0.25);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .analytics-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .analytics-title-group {
+            flex: 1 1 300px;
+        }
+
+        .analytics-subtitle {
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+            margin: 4px 0 0 0;
+            line-height: 1.45;
+        }
+
+        .analytics-badge-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1.5px solid rgba(56, 189, 248, 0.35);
+            border-radius: 20px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            color: #38bdf8;
+            white-space: nowrap;
+        }
+
+        .status-dot-pulse {
+            width: 8px;
+            height: 8px;
+            background-color: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #10b981;
+            animation: statusPulse 2s infinite ease-in-out;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.6; }
+        }
+
+        .analytics-iframe-container {
+            position: relative;
+            width: 100%;
+            height: 680px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: #090f1e;
+            border: 1.5px solid rgba(56, 189, 248, 0.22);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+
+        .analytics-iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .analytics-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .analytics-tech-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .analytics-tech-pills .tech-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 14px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .btn-analytics-fullscreen {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 16px;
+            background: rgba(15, 43, 72, 0.6);
+            border: 1.5px solid rgba(56, 189, 248, 0.35);
+            border-radius: var(--radius-sm);
+            color: #38bdf8;
+            font-size: 0.80rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-analytics-fullscreen:hover {
+            background: rgba(56, 189, 248, 0.2);
+            border-color: #00d2ff;
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .dock-analytics,
+        a.dock-analytics,
+        a.dock-analytics:visited {
+            color: #38bdf8 !important;
+            font-weight: 700 !important;
+        }
+
+        .dock-analytics:hover,
+        .dock-analytics:active,
+        a.dock-analytics:hover,
+        a.dock-analytics:active {
+            color: #00d2ff !important;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.6) !important;
+        }
+
+        @media (max-width: 768px) {
+            .analytics-section {
+                padding: 16px 12px;
+                margin-top: 18px;
+                margin-bottom: 18px;
+            }
+            .analytics-iframe-container {
+                height: 520px;
+                -webkit-overflow-scrolling: touch;
+            }
+            .analytics-footer {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .btn-analytics-fullscreen {
+                width: 100%;
+                justify-content: center;
+                padding: 9px 14px;
+                font-size: 0.82rem;
+            }
+            .analytics-tech-pills {
+                justify-content: center;
+            }
+            .mobile-quick-dock {
+                bottom: 0 !important;
+                left: 0 !important;
+                transform: none !important;
+                width: 100% !important;
+                border-radius: 0 !important;
+                border-left: none !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                border-top: 1px solid var(--border) !important;
+                padding: 6px 0 calc(6px + env(safe-area-inset-bottom, 0px)) !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                gap: 0 !important;
+                box-sizing: border-box !important;
+            }
+            .dock-item,
+            a.dock-item,
+            a.dock-item:visited {
+                font-size: 0.54rem !important;
+                padding: 2px 0 !important;
+                gap: 2px !important;
+                flex: 1 1 0 !important;
+                width: 16.66% !important;
+                max-width: 16.66% !important;
+                min-width: 0 !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+            }
+            .dock-item span {
+                display: block !important;
+                width: 100% !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                white-space: nowrap !important;
+            }
+            .dock-item i {
+                font-size: 0.95rem !important;
+            }
+        }
+
     </style>
 </head>
 
@@ -3872,6 +4312,52 @@
             </div>
         </div>
 
+        
+        <!-- Sección de Telemetría & Analítica en Vivo (Looker Studio / BigQuery) -->
+        <section class="card analytics-section notranslate" translate="no" id="analyticsSection">
+            <div class="analytics-header">
+                <div class="analytics-title-group">
+                    <h2 class="section-title" style="margin-bottom: 4px; border-bottom: none; padding-bottom: 0;">
+                        <span class="section-title-left" id="analyticsTitle">
+                            <i class="fas fa-chart-line"></i>Telemetría & Analítica en Vivo
+                        </span>
+                    </h2>
+                    <p class="analytics-subtitle" id="analyticsSubtitle">
+                        Dashboard ejecutivo en tiempo real con datos de Google Cloud BigQuery, Google Tag Manager y GA4
+                    </p>
+                </div>
+                <div class="analytics-badge-live">
+                    <span class="status-dot-pulse"></span>
+                    <span id="analyticsLiveBadge">En Vivo • BigQuery Serverless</span>
+                </div>
+            </div>
+
+            <div class="analytics-iframe-container">
+                <iframe 
+                    id="lookerStudioIframe"
+                    title="CV Portfolio - Audience & Analytics"
+                    src="https://datastudio.google.com/embed/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F" 
+                    frameborder="0" 
+                    style="border:0; width:100%; height:100%;" 
+                    allowfullscreen 
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="analytics-footer">
+                <div class="analytics-tech-pills">
+                    <span class="tech-pill"><i class="fas fa-database"></i> BigQuery SQL</span>
+                    <span class="tech-pill"><i class="fas fa-tag"></i> GTM</span>
+                    <span class="tech-pill"><i class="fas fa-chart-simple"></i> GA4 Telemetry</span>
+                    <span class="tech-pill"><i class="fas fa-chart-pie"></i> Looker Studio</span>
+                </div>
+                <a href="https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F" target="_blank" rel="noopener" class="btn-analytics-fullscreen" id="btnAnalyticsFullscreen">
+                    <i class="fas fa-arrow-up-right-from-square"></i> <span id="analyticsFullscreenText">Abrir en Pantalla Completa</span>
+                </a>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer">
             <p id="footerCopy">CV Ejecutivo Inteligente • Rubén David Barrios Bello • Marca Registrada ® • Actualizado 2026</p>
@@ -3879,7 +4365,8 @@
                 <a href="tel:+5491170259429"><i class="fas fa-phone-alt"></i> +54 9 11 7025-9429</a> • 
                 <a href="mailto:rubendavid1809@gmail.com"><i class="fas fa-envelope"></i> <span id="footerContactText">Contacto directo</span></a> • 
                 <a href="https://linkedin.com/in/ruben-barrios-1430712ab" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a> • 
-                <a href="https://github.com/rubenbarrios-bigdata" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/rubenbarrios-bigdata" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a> • 
+                <a href="#analyticsSection" onclick="scrollToTarget('analyticsSection'); return false;"><i class="fas fa-chart-line"></i> <span id="footerAnalyticsText">Analítica</span></a>
             </p>
         </footer>
 
@@ -5247,6 +5734,11 @@ function renderProjects(lang = 'es') {
                 dockWa: 'WhatsApp',
                 dockCall: 'Llamar',
                 dockEmail: 'Email',
+                dockAnalytics: 'Analítica',
+                analyticsTitle: '<i class="fas fa-chart-line"></i>Telemetría & Analítica en Vivo',
+                analyticsSubtitle: 'Dashboard ejecutivo en tiempo real con datos de Google Cloud BigQuery, Google Tag Manager y GA4',
+                analyticsLiveBadge: 'En Vivo • BigQuery Serverless',
+                analyticsFullscreen: 'Abrir en Pantalla Completa',
                 dockCallTitle: 'Llamar a Rubén Barrios',
                 scrollTopTitle: 'Volver arriba al principio del CV',
                 
@@ -5397,6 +5889,11 @@ function renderProjects(lang = 'es') {
                 dockWa: 'WhatsApp',
                 dockCall: 'Call',
                 dockEmail: 'Email',
+                dockAnalytics: 'Analytics',
+                analyticsTitle: '<i class="fas fa-chart-line"></i>Live Telemetry & Analytics',
+                analyticsSubtitle: 'Real-time executive dashboard powered by Google Cloud BigQuery, Google Tag Manager & GA4',
+                analyticsLiveBadge: 'Live • Serverless BigQuery',
+                analyticsFullscreen: 'Open in Fullscreen',
                 dockCallTitle: 'Call Rubén Barrios',
                 
             }
@@ -5703,6 +6200,25 @@ function renderProjects(lang = 'es') {
             const dockCallLink = document.getElementById('dockCallLink');
             if (dockCallLink && t.dockCallTitle) dockCallLink.title = t.dockCallTitle;
 
+            const dockAnalytics = document.getElementById('dockAnalyticsText');
+            if (dockAnalytics && t.dockAnalytics) dockAnalytics.innerText = t.dockAnalytics;
+
+            const footerAnalytics = document.getElementById('footerAnalyticsText');
+            if (footerAnalytics && t.dockAnalytics) footerAnalytics.innerText = t.dockAnalytics;
+
+            const analyticsTitle = document.getElementById('analyticsTitle');
+            if (analyticsTitle && t.analyticsTitle) analyticsTitle.innerHTML = t.analyticsTitle;
+
+            const analyticsSubtitle = document.getElementById('analyticsSubtitle');
+            if (analyticsSubtitle && t.analyticsSubtitle) analyticsSubtitle.innerText = t.analyticsSubtitle;
+
+            const analyticsLiveBadge = document.getElementById('analyticsLiveBadge');
+            if (analyticsLiveBadge && t.analyticsLiveBadge) analyticsLiveBadge.innerText = t.analyticsLiveBadge;
+
+            const analyticsFullscreen = document.getElementById('btnAnalyticsFullscreen');
+            const analyticsFullscreenText = document.getElementById('analyticsFullscreenText');
+            if (analyticsFullscreenText && t.analyticsFullscreen) analyticsFullscreenText.innerText = t.analyticsFullscreen;
+
             // Load and render KPIs for this language
             loadKpis(lang);
             renderProjects(lang);
@@ -5757,6 +6273,11 @@ function renderProjects(lang = 'es') {
             <i class="fab fa-github"></i>
             <span>GitHub</span>
         </a>
+        <a href="#analyticsSection" class="dock-item dock-analytics" id="dockAnalyticsLink" title="Ver Analítica y Telemetría en Vivo" onclick="scrollToTarget('analyticsSection'); if(typeof trackAnalyticsClick==='function') trackAnalyticsClick(); return false;">
+            <i class="fas fa-chart-line"></i>
+            <span id="dockAnalyticsText">Analítica</span>
+        </a>
+
     </nav>
     <!-- Botón Flotante para Volver Arriba al Principio del CV -->
     <button type="button" class="btn-scroll-top" id="btnScrollTop" onclick="scrollToTop()" aria-label="Volver arriba al principio del CV" title="Volver arriba al principio del CV">
