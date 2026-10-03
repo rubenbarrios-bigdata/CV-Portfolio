@@ -506,46 +506,68 @@
         .smart-cv-badge {
             display: inline-flex !important;
             align-items: center !important;
-            gap: 3.5px !important;
-            padding: 2px 8px 2px 4px !important;
-            margin: 0 0 4px -2px !important;
+            gap: 6px !important;
+            padding: 0 !important;
+            margin: 0 0 6px 0 !important;
             align-self: flex-start !important;
-            border-radius: 999px !important;
-            font-size: 0.74rem !important;
-            font-weight: 800 !important;
-            letter-spacing: 0.2px !important;
-            margin-bottom: 8px !important;
+            border-radius: 0 !important;
+            font-size: 0.78rem !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.4px !important;
+            margin-bottom: 6px !important;
             width: fit-content !important;
-            background: linear-gradient(135deg, rgba(14, 165, 233, 0.22) 0%, rgba(37, 99, 235, 0.35) 100%) !important;
-            border: 1.5px solid #38bdf8 !important;
-            color: #ffffff !important;
-            box-shadow: 0 0 14px rgba(56, 189, 248, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
-            backdrop-filter: blur(8px) !important;
-            -webkit-backdrop-filter: blur(8px) !important;
+            background: transparent !important;
+            border: none !important;
+            color: #00d2ff !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
             z-index: 10 !important;
             position: relative !important;
         }
 
         .smart-cv-badge .smart-cv-icon {
-            font-size: 0.65rem !important;
+            font-size: 0.82rem !important;
             line-height: 1 !important;
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
+            color: #00d2ff !important;
+            filter: drop-shadow(0 0 6px rgba(0, 210, 255, 0.4));
         }
 
         .smart-cv-badge .smart-cv-text {
-            color: #ffffff !important;
-            font-weight: 800 !important;
+            color: #38bdf8 !important;
+            font-weight: 700 !important;
             line-height: 1 !important;
+            letter-spacing: 0.4px !important;
+        }
+
+        body.light .smart-cv-badge .smart-cv-icon {
+            color: #0284c7 !important;
+            filter: none !important;
+        }
+        body.light .smart-cv-badge .smart-cv-text {
+            color: #0369a1 !important;
         }
 
         @media (max-width: 768px) {
             .smart-cv-badge {
-                margin: 0 0 5px 0 !important;
-                font-size: 0.68rem !important;
-                padding: 3px 8px !important;
+                margin: 0 0 4px 0 !important;
+                font-size: 0.70rem !important;
+                padding: 0 !important;
+                gap: 5px !important;
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .smart-cv-badge .smart-cv-icon {
+                font-size: 0.74rem !important;
+            }
+            .smart-cv-badge .smart-cv-text {
+                font-size: 0.70rem !important;
             }
         }
 
@@ -2169,12 +2191,24 @@
             }
             .smart-cv-badge {
                 margin: 0 0 4px 0 !important;
-                font-size: 0.62rem !important;
-                padding: 2px 7px !important;
-                gap: 4px !important;
+                font-size: 0.68rem !important;
+                padding: 0 !important;
+                gap: 5px !important;
                 align-self: flex-start !important;
                 white-space: nowrap !important;
                 max-width: 100% !important;
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+            .smart-cv-badge .smart-cv-icon {
+                font-size: 0.72rem !important;
+                color: #00d2ff !important;
+            }
+            .smart-cv-badge .smart-cv-text {
+                font-size: 0.68rem !important;
+                color: #38bdf8 !important;
             }
             .name {
                 font-size: 1.10rem !important;
@@ -3195,31 +3229,35 @@
                 height: 4.5px !important;
             }
 
-            /* Badge CV Ejecutivo Inteligente alineado a la izquierda con emoji afinado */
+            /* Badge CV Portfolio alineado a la izquierda sin óvalo */
             .smart-cv-badge {
-                margin: 0 0 3px -3px !important;
+                margin: 0 0 3px 0 !important;
                 align-self: flex-start !important;
-                font-size: 0.52rem !important;
-                padding: 1.5px 5.5px 1.5px 3.5px !important;
-                gap: 2.5px !important;
+                font-size: 0.55rem !important;
+                padding: 0 !important;
+                gap: 3.5px !important;
                 letter-spacing: 0.2px !important;
-                border-width: 1px !important;
-                box-shadow: 0 0 8px rgba(56, 189, 248, 0.25) !important;
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
                 white-space: nowrap !important;
             }
 
             .smart-cv-badge .smart-cv-icon {
-                font-size: 0.44rem !important;
+                font-size: 0.52rem !important;
                 line-height: 1 !important;
                 display: inline-flex !important;
                 align-items: center !important;
                 justify-content: center !important;
+                color: #00d2ff !important;
             }
 
             .smart-cv-badge .smart-cv-text {
-                font-size: 0.52rem !important;
-                font-weight: 800 !important;
+                font-size: 0.55rem !important;
+                font-weight: 700 !important;
                 line-height: 1 !important;
+                color: #38bdf8 !important;
             }
 
             /* Nombre */
@@ -3775,8 +3813,8 @@
             </div>
             <div class="header-content">
                 <div class="smart-cv-badge" id="smartCvBadge">
-                    <span class="smart-cv-icon">&#128202;</span>
-                    <span class="smart-cv-text" id="smartCvText">CV Ejecutivo Inteligente</span>
+                    <span class="smart-cv-icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="smart-cv-text" id="smartCvText">CV Portfolio</span>
                 </div>
                 <h1 class="name">Rub&eacute;n David Barrios Bello</h1>
                 <div class="title">
@@ -5615,6 +5653,7 @@ function renderProjects(lang = 'es') {
             es: {
                 htmlLang: 'es',
                 metaDesc: 'CV Web Profesional de Rubén David Barrios Bello - Data Analyst, Business Intelligence & Fraud Prevention.',
+                smartCvText: 'CV Portfolio',
                 headerTitle: 'Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | Lic. en Banca y Finanzas',
                 headerLocation: 'Parque Patricios, CABA - Argentina',
                 statusText: 'Disponible',
@@ -5746,6 +5785,7 @@ function renderProjects(lang = 'es') {
             en: {
                 htmlLang: 'en',
                 metaDesc: 'Professional Web Resume of Rubén David Barrios Bello - Data Analyst, Business Intelligence & Fraud Prevention.',
+                smartCvText: 'CV Portfolio',
                 headerTitle: 'Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | B.A. in Banking and Finance',
                 headerLocation: 'Parque Patricios, Buenos Aires - Argentina',
                 statusText: 'Available',
