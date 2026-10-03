@@ -194,7 +194,7 @@ Visualización analítica en Looker Studio conectada directamente a Google Cloud
 
 <div align="center">
   <img src="screenshots/13_looker_studio_audience_analytics_dashboard.png" alt="Dashboard Ejecutivo Looker Studio - Telemetría y Audiencia" width="95%" style="border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
-  <p><em>Panel en Looker Studio: 6 KPIs unificados en cian, evolución temporal limpia (DD/MM), embudo de conversión humano (123 sesiones), aislamiento de bots de datacenters (33.9%) y tabla con mapa de calor azul en cascada con los polos reales de reclutamiento (Buenos Aires, Silicon Valley, Ámsterdam, UK, New York).</em></p>
+  <p><em>Panel en Looker Studio: 6 KPIs unificados en cian (incluyendo tasa de conversión depurada a nivel de sesión del 14,8%), evolución temporal limpia (DD/MM), embudo de conversión humano (123 sesiones), aislamiento de bots de datacenters (33.9%) y tabla con mapa de calor azul en cascada con los polos reales de reclutamiento (Buenos Aires, Silicon Valley, Ámsterdam, UK, New York).</em></p>
 </div>
 
 ---
