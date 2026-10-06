@@ -173,7 +173,7 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     story.append(Paragraph("RUBÉN DAVID BARRIOS BELLO", styles["Name"]))
     story.append(Paragraph("Data Analyst | Business Intelligence & Fraud Prevention | Lic. en Banca y Finanzas", styles["Headline"]))
     story.append(Paragraph('Tel: +54 9 11 7025-9429 &nbsp;|&nbsp; Email: <a href="mailto:rubendavid1809@gmail.com" color="#1D4ED8">rubendavid1809@gmail.com</a> &nbsp;|&nbsp; Ubicación: Buenos Aires, Argentina', styles["Contact"]))
-    story.append(Paragraph('LinkedIn: <a href="https://linkedin.com/in/ruben-barrios-1430712ab" color="#1D4ED8"><b>linkedin.com/in/ruben-barrios-1430712ab</b></a> &nbsp;|&nbsp; GitHub: <a href="https://github.com/rubenbarrios-bigdata" color="#1D4ED8"><b>github.com/rubenbarrios-bigdata</b></a> &nbsp;|&nbsp; CV Web: <a href="https://rubenbarrios-bigdata.github.io/cv-ejecutivo-inteligente/" color="#1D4ED8"><b>cv-ejecutivo-inteligente</b></a>', styles["Links"]))
+    story.append(Paragraph('LinkedIn: <a href="https://linkedin.com/in/ruben-barrios-1430712ab" color="#1D4ED8"><b>linkedin.com/in/ruben-barrios-1430712ab</b></a> &nbsp;|&nbsp; GitHub: <a href="https://github.com/rubenbarrios-bigdata" color="#1D4ED8"><b>github.com/rubenbarrios-bigdata</b></a> &nbsp;|&nbsp; CV Web: <a href="https://rubenbarrios-bigdata.github.io/CV-Portfolio/" color="#1D4ED8"><b>CV-Portfolio</b></a>', styles["Links"]))
     story.append(hr_header())
 
     # PERFIL PROFESIONAL
@@ -313,7 +313,7 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     story.append(Paragraph("RUBÉN DAVID BARRIOS BELLO", styles["Name"]))
     story.append(Paragraph("Data Analyst | Business Intelligence & Fraud Prevention | B.A. in Banking & Finance", styles["Headline"]))
     story.append(Paragraph('Phone: +54 9 11 7025-9429 &nbsp;|&nbsp; Email: <a href="mailto:rubendavid1809@gmail.com" color="#1D4ED8">rubendavid1809@gmail.com</a> &nbsp;|&nbsp; Location: Buenos Aires, Argentina', styles["Contact"]))
-    story.append(Paragraph('LinkedIn: <a href="https://linkedin.com/in/ruben-barrios-1430712ab" color="#1D4ED8"><b>linkedin.com/in/ruben-barrios-1430712ab</b></a> &nbsp;|&nbsp; GitHub: <a href="https://github.com/rubenbarrios-bigdata" color="#1D4ED8"><b>github.com/rubenbarrios-bigdata</b></a> &nbsp;|&nbsp; Digital CV: <a href="https://rubenbarrios-bigdata.github.io/cv-ejecutivo-inteligente/" color="#1D4ED8"><b>cv-ejecutivo-inteligente</b></a>', styles["Links"]))
+    story.append(Paragraph('LinkedIn: <a href="https://linkedin.com/in/ruben-barrios-1430712ab" color="#1D4ED8"><b>linkedin.com/in/ruben-barrios-1430712ab</b></a> &nbsp;|&nbsp; GitHub: <a href="https://github.com/rubenbarrios-bigdata" color="#1D4ED8"><b>github.com/rubenbarrios-bigdata</b></a> &nbsp;|&nbsp; Digital CV: <a href="https://rubenbarrios-bigdata.github.io/CV-Portfolio/" color="#1D4ED8"><b>CV-Portfolio</b></a>', styles["Links"]))
     story.append(hr_header())
 
     # PROFILE

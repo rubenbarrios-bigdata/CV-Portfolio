@@ -107,7 +107,7 @@ paragraphs.append(f'<w:p>{pPr_top_line}</w:p>')
 paragraphs.append(make_p("RUBÉN DAVID BARRIOS BELLO", bold=True, size=32, color="0F172A", align="center", space_before=0, space_after=30))
 paragraphs.append(make_p("Data Analyst | Business Intelligence & Fraud Prevention | Lic. en Banca y Finanzas", bold=True, size=21, color="1E3A8A", align="center", space_before=0, space_after=30))
 paragraphs.append(make_p("Tel: +54 9 11 7025-9429 | Email: rubendavid1809@gmail.com | Ubicación: Buenos Aires, Argentina", size=18, color="111827", align="center", space_before=0, space_after=20))
-paragraphs.append(make_p("LinkedIn: linkedin.com/in/ruben-barrios-1430712ab | GitHub: github.com/rubenbarrios-bigdata | CV Web: rubenbarrios-bigdata.github.io/cv-ejecutivo-inteligente/", size=18, color="1D4ED8", align="center", space_before=0, space_after=30))
+paragraphs.append(make_p("LinkedIn: linkedin.com/in/ruben-barrios-1430712ab | GitHub: github.com/rubenbarrios-bigdata | CV Web: rubenbarrios-bigdata.github.io/CV-Portfolio/", size=18, color="1D4ED8", align="center", space_before=0, space_after=30))
 
 pPr_bottom_line = '<w:pPr><w:spacing w:before="0" w:after="80"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="1" w:color="0F172A"/></w:pBdr></w:pPr>'
 paragraphs.append(f'<w:p>{pPr_bottom_line}</w:p>')
