@@ -38,11 +38,11 @@ El repositorio incluye el **CV completo en formato HTML nativo**, estructurado c
 | :--- | :--- | :--- | :--- |
 | **CV Web Desktop (HTML Principal)** | [`CV_Ruben_Barrios.html`](CV_Ruben_Barrios.html) & [`index.html`](index.html) | 🌐 [Abrir CV Web en GitHub Pages](https://rubenbarrios-bigdata.github.io/CV-Portfolio/CV_Ruben_Barrios.html) | Experiencia interactiva completa: 4 KPIs dinámicos, navegación por anclas, alternador de Modo Oscuro/Claro y filtros de certificaciones. |
 | **CV Web Mobile (HTML)** | [`CV_Ruben_Barrios_Mobile.html`](CV_Ruben_Barrios_Mobile.html) & [`mobile.html`](mobile.html) | 📱 [Abrir versión Mobile en GitHub Pages](https://rubenbarrios-bigdata.github.io/CV-Portfolio/CV_Ruben_Barrios_Mobile.html) | Versión adaptada con navegación vertical optimizada para pantallas táctiles de celulares. |
-| **Descarga Directa del Código HTML** | [`CV_Ruben_Barrios.html`](CV_Ruben_Barrios.html) | 📥 [Descargar archivo .html](https://raw.githubusercontent.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/main/CV_Ruben_Barrios.html) | Podés descargarlo y abrirlo con doble clic en cualquier navegador (Chrome, Edge, Safari, Firefox) sin necesidad de internet ni servidores. |
-| **Plan de Medición Digital (Excel)** | [Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx](Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | 📊 [Descargar Plan de Medición (.xlsx)](https://github.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/raw/main/Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | Tracking Plan Enterprise: Matriz de eventos GA4/GTM, variables DataLayer, definiciones personalizadas y SQL para BigQuery. |
+| **Descarga Directa del Código HTML** | [`CV_Ruben_Barrios.html`](CV_Ruben_Barrios.html) | 📥 [Descargar archivo .html](https://raw.githubusercontent.com/rubenbarrios-bigdata/CV-Portfolio/main/CV_Ruben_Barrios.html) | Podés descargarlo y abrirlo con doble clic en cualquier navegador (Chrome, Edge, Safari, Firefox) sin necesidad de internet ni servidores. |
+| **Plan de Medición Digital (Excel)** | [Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx](Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | 📊 [Descargar Plan de Medición (.xlsx)](https://github.com/rubenbarrios-bigdata/CV-Portfolio/raw/main/Plan_de_Medicion_Digital_CV_Ejecutivo_Inteligente.xlsx) | Tracking Plan Enterprise: Matriz de eventos GA4/GTM, variables DataLayer, definiciones personalizadas y SQL para BigQuery. |
 | **Modelos Analíticos SQL en BigQuery** | [`sql/`](sql/) & [`sql/README.md`](sql/README.md) | 🏛️ [Ver Modelos SQL](sql/README.md) | 6 modelos de datos en Google Cloud BigQuery: desanidado de eventos GA4, funnels de conversión, auditoría de bots y Data Quality. |
 | **Dashboard de Telemetría (Looker Studio)** | [Looker Studio Report](https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F) | 📊 [Ver en Looker Studio](https://lookerstudio.google.com/reporting/e86c69af-9a64-48a5-9298-417f3f0b9a6d/page/vh89F) | Dashboard Cloud en tiempo real embebido dentro del CV: 6 KPIs de audiencia, embudo limpio, calidad de tráfico humano vs bots y ranking por ciudad. |
-| **Versión en Documento PDF** | [`CV_Ruben_Barrios_Analista_De_Datos.pdf`](CV_Ruben_Barrios_Analista_De_Datos.pdf) | 📕 [Ver / Descargar PDF](https://github.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente/raw/main/CV_Ruben_Barrios_Analista_De_Datos.pdf) | Documento tradicional listo para adjuntar en sistemas de selección ATS o procesos estándar. |
+| **Versión en Documento PDF** | [`CV_Ruben_Barrios_Analista_De_Datos.pdf`](CV_Ruben_Barrios_Analista_De_Datos.pdf) | 📕 [Ver / Descargar PDF](https://github.com/rubenbarrios-bigdata/CV-Portfolio/raw/main/CV_Ruben_Barrios_Analista_De_Datos.pdf) | Documento tradicional listo para adjuntar en sistemas de selección ATS o procesos estándar. |
 
 > 💡 **Ventaja de un CV en HTML para un Analista de Datos**:
 > Presentar el currículum en formato HTML demuestra en la práctica conocimientos fundamentales en tecnologías web (DOM, CSS, JavaScript, JSON y APIs), habilidades indispensables para la implementación de analítica digital (GA4, GTM), medición de eventos y desarrollo de interfaces interactivas de Business Intelligence.
@@ -491,10 +491,10 @@ Simplemente hacé doble clic en el archivo [`CV_Ruben_Barrios.html`](CV_Ruben_Ba
 ### Opción 2: Clonar y servir con servidor local
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/rubenbarrios-bigdata/cv-ejecutivo-inteligente.git
+git clone https://github.com/rubenbarrios-bigdata/CV-Portfolio.git
 
 # 2. Ingresar a la carpeta
-cd cv-ejecutivo-inteligente
+cd CV-Portfolio
 
 # 3. Iniciar un servidor local (con Python)
 python -m http.server 8000
