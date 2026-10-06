@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Architecture](https://img.shields.io/badge/Architecture-CV%20Ejecutivo%20Inteligente-0284c7?style=for-the-badge&logo=shield&logoColor=white)](Plan_Estrategico_Talent_Intelligence_Career_TIC_Ruben_Barrios.pdf)
+[![Architecture](https://img.shields.io/badge/Architecture-CV%20Portfolio-0284c7?style=for-the-badge&logo=shield&logoColor=white)](Plan_Estrategico_Talent_Intelligence_Career_TIC_Ruben_Barrios.pdf)
 [![Live Demo en GitHub Pages](https://img.shields.io/badge/🌐%20Live%20Demo-GitHub%20Pages-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://rubenbarrios-bigdata.github.io/CV-Portfolio/)
 [![Ver CV en HTML](https://img.shields.io/badge/📄%20CV%20en%20HTML-CV__Ruben__Barrios.html-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://rubenbarrios-bigdata.github.io/CV-Portfolio/CV_Ruben_Barrios.html)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rubén%20Barrios-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-barrios)
