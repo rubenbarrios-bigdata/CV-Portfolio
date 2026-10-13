@@ -319,18 +319,18 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     # PROFILE
     story.append(Paragraph("PROFESSIONAL SUMMARY", styles["SectionTitle"]))
     story.append(hr_section())
-    story.append(Paragraph("<b>Data Analyst</b> with demonstrated experience analyzing fraud metrics in e-commerce logistics and last-mile fulfillment, complemented by over 15 years of solid experience in the banking sector, international business, and corporate finance. Today, I combine that strategic mindset with a solutions-oriented approach to transform business requirements into high-impact analytical solutions through <b>SQL queries (MySQL, PostgreSQL)</b>, data cleaning and automation with <b>Python (pandas)</b>, executive dashboard design in <b>Power BI, Excel, and Google Sheets</b>, and digital product analytics with <b>GTM, GA4, BigQuery, and Data Studio</b>.", styles["Body"]))
+    story.append(Paragraph("<b>BI/Data Analyst</b> with over 4 years of experience in data analysis for fraud prevention and operational control in e-commerce and last-mile logistics, and over 15 preceding years in banking and international trade. Development of dashboards in <b>Power BI and Excel</b>, SQL queries (<b>MySQL, PostgreSQL</b>), data cleaning and analysis with <b>Python</b>, data modeling with <b>dbt Core</b>, and digital product analytics with <b>Google Analytics 4, Google Tag Manager, BigQuery, and Looker Studio</b>. Experienced in cross-functional collaboration with Operations, BackEnd, FrontEnd, and QA teams, transforming data into actionable alerts and reports for decision-making.", styles["Body"]))
     story.append(Spacer(1, 4))
-    story.append(Paragraph("Proven track record of business metric optimization, highlighted by an <b>80% historical reduction in the fraud loss ratio (from 0.150% to 0.030%)</b> in high-volume operations through continuous metrics monitoring. Analytical mindset oriented towards evidence-based decision-making and cross-functional collaboration with Product, Backend, and Operations teams.", styles["Body"]))
-    story.append(Spacer(1, 3))
 
     # TECHNICAL SKILLS AND STRENGTHS
-    story.append(Paragraph("TECHNICAL SKILLS AND STRENGTHS", styles["SectionTitle"]))
+    story.append(Paragraph("TECHNICAL SKILLS", styles["SectionTitle"]))
     story.append(hr_section())
-    story.append(Paragraph("• <b>Data Analytics & Business Intelligence:</b> Power BI (Advanced DAX, Power Query, dimensional modeling, PBIP), dbt, SQL (MySQL, PostgreSQL: complex queries, subqueries, aggregations), Python (pandas, NumPy, Matplotlib, Colab, VSCode), Advanced Excel (pivot tables, advanced formulas, executive dashboard).", styles["Bullet"]))
-    story.append(Paragraph("• <b>Digital Analytics & Product Visualization:</b> Looker Studio, Google Analytics 4 (GA4), Google Tag Manager (GTM), Supabase, Firebase, BigQuery, executive KPI design, user retention, engagement, funnel and conversion tracking.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Business Strategy & Fraud Prevention:</b> Fraud Prevention, Anomaly Detection in Logistics/E-Commerce & Last-Mile, Corporate Finance, International Trade, Foreign Exchange Settlement & Funds Traceability.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Tools & Methodologies:</b> Git, GitHub, CI/CD for BI, Agile/Scrum, Generative AI applied to analytical workflows (ChatGPT, Copilot, Gemini, Claude, Make).", styles["Bullet"]))
+    story.append(Paragraph("• <b>BI & Visualization:</b> Power BI DevOps (DAX, Power Query, PBIP, Git, CI/CD, and Microsoft Fabric), data modeling, Excel (pivot tables), Google Sheets, Looker Studio.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Databases, SQL & Modeling:</b> MySQL, PostgreSQL, Supabase. BigQuery, dbt Core, dimensional modeling.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Python:</b> Pandas, NumPy, Matplotlib, Seaborn (Google Colab, VSCode).", styles["Bullet"]))
+    story.append(Paragraph("• <b>Digital Analytics:</b> Google Analytics 4 (GA4), Google Tag Manager (GTM), KPI design, funnel analysis, user retention, engagement, and conversion.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Tools:</b> Git/GitHub, Generative AI applied to analytics (ChatGPT, Copilot, Gemini, Claude), automation with Make.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Business Domain:</b> E-commerce, logistics & distribution, fraud prevention, claims analysis, banking, Management Indicators (KPIs), and metric tracking.", styles["Bullet"]))
     story.append(Spacer(1, 3))
 
     # WORK EXPERIENCE
@@ -339,30 +339,40 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
 
     # Position 1
     story.append(make_job_header(
-        "Innova Lab — Mate-Mático Project",
+        "Innova Lab Program: MVP Project \"Mate-Mático\"",
         "Buenos Aires, Argentina",
-        "Data Analyst & Digital Analytics Specialist (MVP Project)",
-        "Jul. 2026 – Present",
+        "Data Analyst & Digital Analytics",
+        "May 2026 – Present",
         usable_width, styles
     ))
-    story.append(Paragraph("• <b>End-to-End Data & Analytics Architecture:</b> Designed and deployed product analytics and event-tracking infrastructure from scratch for the Mate-Mático educational platform.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Database Modeling & Querying:</b> Structured and queried relational schemas in <b>Supabase (PostgreSQL)</b> and Firebase to track transactional events and user behavior metrics.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Advanced Event Tracking:</b> Configured and validated tracking tags, triggers, and custom parameters using <b>Google Tag Manager (GTM)</b> and <b>Google Analytics 4 (GA4)</b> in close alignment with Backend and QA teams.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Product Executive Dashboards:</b> Built real-time interactive dashboards in <b>Looker Studio</b> embedded inside the application, monitoring user retention, academic progression, and conversion KPIs.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Analytics Architecture & Strategy:</b> Designed the data analytics layer and digital measurement strategy for the educational app Mate-Mático in collaboration with the cross-functional project team.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Database Modeling & Querying:</b> Structured and queried relational tables in <b>Supabase (PostgreSQL)</b> and Firebase to capture transactional events and user behavior metrics.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Advanced Event Tracking:</b> Configured tags, triggers, and variables in <b>Google Tag Manager (GTM)</b>; defined measurement requirements and dataLayer instrumentation with Backend; validated events in <b>GA4</b> and conducted <b>BigQuery</b> analysis.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Product Executive Dashboards:</b> Created an embedded <b>Looker Studio</b> dashboard within the application, featuring usage, retention, academic progression, and conversion KPIs.", styles["Bullet"]))
     story.append(Spacer(1, 3))
 
-    # Position 2
+    # Position 2 - Independent
     story.append(make_job_header(
-        "Webpack S.R.L. — Official Mercado Libre Logistics Operator",
+        "Independent Venture & Self-Employment",
         "Buenos Aires, Argentina",
-        "Data Analyst | Fraud Prevention | E-commerce Logistics & Last-Mile Fulfillment",
-        "Mar. 2020 – Oct. 2024",
+        "Independent Activity & Analytics Consulting",
+        "2024 – 2026",
         usable_width, styles
     ))
-    story.append(Paragraph("• <b>Key Business Impact:</b> Achieved a historic <b>80% reduction in the fraud loss ratio (from 0.150% to 0.030%)</b>, establishing Webpack as the benchmark logistics operator across Mercado Libre's entire network.", styles["Achievement"]))
-    story.append(Paragraph("• <b>Anomaly Detection & SQL Analysis:</b> Queried, transformed, and cleaned operational transaction data using SQL and automated reporting to identify systemic fraud patterns and mitigate direct financial losses.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Business Intelligence & Control Dashboards:</b> Designed, automated, and maintained interactive dashboards in <b>Power BI (DAX)</b> and advanced Excel models for end-to-end tracking and high-volume claims/incident analysis.", styles["Bullet"]))
-    story.append(Paragraph("• <b>Operational Process Optimization:</b> Coordinated with dispatch, warehouse, and asset protection teams to establish early-warning response protocols driven by data evidence.", styles["Bullet"]))
+    story.append(Spacer(1, 3))
+
+    # Position 3 - Webpack
+    story.append(make_job_header(
+        "Webpack S.R.L. (Official Mercado Libre Logistics Operator)",
+        "Buenos Aires, Argentina",
+        "Data Analyst, Fraud Prevention (E-commerce & Last-Mile Fulfillment)",
+        "2020 – 2024",
+        usable_width, styles
+    ))
+    story.append(Paragraph("• <b>Historic Business Impact:</b> Achieved a historic <b>80% reduction in the fraud loss ratio (0.150% → 0.030%)</b>, positioning the company as the last-mile logistics operator with the lowest loss ratio across Mercado Libre's network.", styles["Achievement"]))
+    story.append(Paragraph("• <b>Anomaly Detection & SQL Analysis:</b> Extracted, cleaned, and analyzed operational transaction data using SQL queries and automated reporting to identify systemic deviations and mitigate financial losses.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Business Intelligence & Dashboards:</b> Designed and maintained dashboards in <b>Power BI</b> and analytical models in <b>Excel</b> for end-to-end tracking, analysis, and traceability of high-volume claims and incident reports.", styles["Bullet"]))
+    story.append(Paragraph("• <b>Operational Process Optimization:</b> Coordinated with dispatch, warehouse operations, and asset protection teams, establishing early-warning protocols backed by analytical evidence.", styles["Bullet"]))
 
     story.append(PageBreak())
 
