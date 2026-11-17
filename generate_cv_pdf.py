@@ -276,6 +276,7 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     story.append(Paragraph("CERTIFICADOS", styles["SectionTitle"]))
     story.append(hr_section())
     certs = [
+        ("Experto en Análisis y Visualización de Datos + IA", "Udemy — DataBoosters Academy"),
         ("Analítica Digital: Google Tag Manager, Google Analytics 4 y Data Studio", "Analytics Way"),
         ("Análisis de Datos: Excel, Power BI, SQL y Python", "Datax"),
         ("Fundamentos de Inteligencia Artificial (Artificial Intelligence Fundamentals)", "IBM SkillsBuild"),
@@ -426,6 +427,7 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     story.append(Paragraph("CERTIFICATES", styles["SectionTitle"]))
     story.append(hr_section())
     certs_en = [
+        ("Expert in Data Analytics and Data Visualization + AI", "Udemy — DataBoosters Academy"),
         ("Digital Analytics: Google Tag Manager, Google Analytics 4, and Data Studio", "Analytics Way"),
         ("Data Analysis: Excel, Power BI, SQL, and Python", "Datax"),
         ("Artificial Intelligence Fundamentals", "IBM SkillsBuild"),

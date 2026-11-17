@@ -53,13 +53,13 @@
     },
     {
       "id": "kpi-certificados",
-      "number": "9 Certificates",
+      "number": "10 Certificates",
       "label": "Data Analytics + AI",
       "icon": "fas fa-certificate",
       "target": "certificationsSection",
       "tooltip": "View Certificates in Data Analytics + AI",
       "category": "Certifications & Training",
-      "impact": "Professional credentials issued by IBM SkillsBuild, GCBA Talento Tech, Analytics Way, and Datax."
+      "impact": "Professional credentials issued by Udemy, IBM SkillsBuild, GCBA Talento Tech, Analytics Way, and Datax."
     },
     {
       "id": "kpi-herramientas",

@@ -169,6 +169,7 @@ paragraphs.append(make_p("• <b>T.S.U. en Administración de Recursos Físicos 
 
 # Certificados Extracurriculares
 paragraphs.append(make_heading("CERTIFICADOS"))
+paragraphs.append(make_p("• <b>Experto en Análisis y Visualización de Datos + IA</b> | Udemy — DataBoosters Academy", size=18, bullet=True, space_after=15))
 paragraphs.append(make_p("• <b>Analítica Digital: Google Tag Manager, Google Analytics 4 y Data Studio</b> | Analytics Way", size=18, bullet=True, space_after=15))
 paragraphs.append(make_p("• <b>Análisis de Datos: Excel, Power BI, SQL y Python</b> | Datax", size=18, bullet=True, space_after=15))
 paragraphs.append(make_p("• <b>Fundamentos de Inteligencia Artificial (Artificial Intelligence Fundamentals)</b> | IBM SkillsBuild", size=18, bullet=True, space_after=15))
