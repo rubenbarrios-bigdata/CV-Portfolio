@@ -3829,7 +3829,7 @@
                 </a>
                 <h1 class="name">Rub&eacute;n David Barrios Bello</h1>
                 <div class="title">
-                    <span id="headerTitleSpan">Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | Lic. en Banca y Finanzas</span>
+                    <span id="headerTitleSpan">Power BI Developer & BI DevOps | Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | Lic. en Banca y Finanzas</span>
                     
                 </div>
                 <div class="contact-grid">
@@ -4897,9 +4897,9 @@ function initTelemetryListeners() {
             
             // Intentar fetch solo si estamos en http/https para telemetría
             if (window.location.protocol.startsWith('http')) {
-                const dataFile = currentLang === 'en' ? './data_en.json' : './data.json';
+                const dataFile = (currentLang === 'en' ? './data_en.json' : './data.json') + '?v=' + Date.now();
                 try {
-                    const response = await fetch(dataFile);
+                    const response = await fetch(dataFile, { cache: 'no-store' });
                     if (response.ok) {
                         const data = await response.json();
                         if (data && data.kpis && data.kpis.length > 0) {
@@ -5147,10 +5147,10 @@ function renderProjects(lang = 'es') {
             {
                 id: "cert-experto-datos-ia",
                 title: { es: "Experto en Análisis y Visualización de Datos + IA", en: "Expert in Data Analytics and Data Visualization + AI" },
-                issuer: "Udemy • DataBoosters Academy",
+                issuer: "Udemy",
                 date: { es: "Nov 2026", en: "Nov 2026" },
                 category: "data",
-                icon: "fa-award",
+                icon: "fa-chart-line",
                 image: "certs_images/Experto en Análisis y Visualización de Datos + IA.png",
                 file: "Experto en Análisis y Visualización de Datos + IA.pdf",
                 skills: {
@@ -5673,7 +5673,7 @@ function renderProjects(lang = 'es') {
                 htmlLang: 'es',
                 metaDesc: 'CV Web Profesional de Rubén David Barrios Bello - Data Analyst, Business Intelligence & Fraud Prevention.',
                 smartCvText: 'CV Portfolio',
-                headerTitle: 'Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | Lic. en Banca y Finanzas',
+                headerTitle: 'Power BI Developer & BI DevOps | Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | Lic. en Banca y Finanzas',
                 headerLocation: 'Parque Patricios, CABA - Argentina',
                 statusText: 'Disponible',
                 statusTitle: 'Disponible para roles de Data Analyst & BI',
@@ -5805,7 +5805,7 @@ function renderProjects(lang = 'es') {
                 htmlLang: 'en',
                 metaDesc: 'Professional Web Resume of Rubén David Barrios Bello - Data Analyst, Business Intelligence & Fraud Prevention.',
                 smartCvText: 'CV Portfolio',
-                headerTitle: 'Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | B.A. in Banking and Finance',
+                headerTitle: 'Power BI Developer & BI DevOps | Data Analyst | Digital Analyst | Business Intelligence | <span style="white-space: nowrap;">Fraud Prevention</span> | B.A. in Banking and Finance',
                 headerLocation: 'Parque Patricios, Buenos Aires - Argentina',
                 statusText: 'Available',
                 statusTitle: 'Available for Data Analyst & BI roles',

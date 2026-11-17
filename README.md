@@ -24,7 +24,7 @@
 
 ### 💡 *"CV con mentalidad de dashboard — 4 KPIs clave sobre mi perfil profesional"*
 
-**Data Analyst | Digital Analyst | Business Intelligence | Fraud Prevention | Lic. en Banca y Finanzas**
+**Power BI Developer & BI DevOps | Data Analyst | Digital Analyst | Business Intelligence | Fraud Prevention | Lic. en Banca y Finanzas**
 
 </div>
 
