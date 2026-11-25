@@ -3920,7 +3920,7 @@
                     <div class="experience-item">
                         <div class="exp-header">
                             <div>
-                                <div class="exp-role">Data Analyst</div>
+                                <div class="exp-role" id="innovaRole">Data Analyst | Digital Analyst</div>
                                 <div class="exp-company"><i class="fas fa-building"></i> Innova Lab</div>
                             </div>
                             <span class="exp-date" id="innovaDate">Mayo 2026 - Presente</span>
@@ -5689,6 +5689,7 @@ function renderProjects(lang = 'es') {
                 perfilTitle: '<i class="fas fa-user-tie"></i>Perfil Profesional',
                 perfilText: '<strong>Business Intelligence / Data Analyst</strong> con experiencia comprobada en análisis de métricas de fraude en logística para e-commerce y distribución de última milla (Last-Mile Fulfillment), complementada por más de 15 años de sólida trayectoria en el sector bancario, negocios internacionales y finanzas corporativas. Hoy combino esa visión estratégica con un enfoque resolutivo orientado a transformar requerimientos de negocio en soluciones analíticas de alto impacto mediante consultas SQL (MySQL, PostgreSQL), limpieza de datos y automatización con Python (pandas), diseño de dashboards ejecutivos en Power BI, Excel y Google Sheets, y analítica digital de productos con GTM, GA4, BigQuery y Data Studio.<br><br>Historial comprobado en optimización de indicadores de negocio, destacando la reducción del 80% en el ratio histórico de siniestralidad por fraude (de 0,150% a 0,030%) en operaciones de alto volumen mediante el monitoreo continuo de métricas. Perfil analítico orientado a la toma de decisiones basada en evidencia y trabajo multidisciplinario con equipos de Producto, Backend y Operaciones.',
                 expLaboralTitle: '<i class="fas fa-briefcase"></i>Experiencia Laboral',
+                innovaRole: 'Data Analyst | Digital Analyst',
                 innovaDate: 'Mayo 2026 - Presente',
                 innovaDesc: `<ul>
                     <li>Implementación integral de analítica digital con <strong>Google Tag Manager (GTM), Google Analytics 4 (GA4)</strong> y Data Studio.</li>
@@ -5821,6 +5822,7 @@ function renderProjects(lang = 'es') {
                 perfilTitle: '<i class="fas fa-user-tie"></i>Professional Summary',
                 perfilText: '<strong>Business Intelligence / Data Analyst</strong> with demonstrated experience analyzing fraud metrics in e-commerce logistics and last-mile fulfillment, complemented by over 15 years of solid experience in the banking sector, international business, and corporate finance. Today, I combine that strategic mindset with a solutions-oriented approach to transform business requirements into high-impact analytical solutions through SQL queries (MySQL, PostgreSQL), data cleaning and automation with Python (pandas), executive dashboard design in Power BI, Excel, and Google Sheets, and digital product analytics with GTM, GA4, BigQuery, and Data Studio.<br><br>Proven track record in optimizing business indicators, highlighted by an 80% reduction in the historical fraud loss ratio (from 0.150% to 0.030%) in high-volume operations through continuous metrics monitoring. Analytical profile focused on evidence-based decision-making and cross-functional collaboration with Product, Backend, and Operations teams.',
                 expLaboralTitle: '<i class="fas fa-briefcase"></i>Work Experience',
+                innovaRole: 'Data Analyst | Digital Analyst',
                 innovaDate: 'May 2026 - Present',
                 innovaDesc: `<ul>
                     <li>End-to-end digital analytics implementation with <strong>Google Tag Manager (GTM), Google Analytics 4 (GA4)</strong>, and Data Studio.</li>
@@ -6072,6 +6074,9 @@ function renderProjects(lang = 'es') {
             // Experiencia Laboral
             const expLaboralTitle = document.getElementById('expLaboralTitle');
             if (expLaboralTitle) expLaboralTitle.innerHTML = t.expLaboralTitle;
+
+            const innovaRole = document.getElementById('innovaRole');
+            if (innovaRole) innovaRole.innerText = t.innovaRole;
 
             const innovaDate = document.getElementById('innovaDate');
             if (innovaDate) innovaDate.innerText = t.innovaDate;
