@@ -53,7 +53,7 @@
     },
     {
       "id": "kpi-certificados",
-      "number": "10 Certificados",
+      "number": "11 Certificados",
       "label": "Análisis de Datos + IA",
       "icon": "fas fa-certificate",
       "target": "certificationsSection",

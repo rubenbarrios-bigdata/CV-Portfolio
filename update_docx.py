@@ -114,7 +114,7 @@ paragraphs.append(f'<w:p>{pPr_bottom_line}</w:p>')
 
 # PERFIL PROFESIONAL
 paragraphs.append(make_heading("PERFIL PROFESIONAL"))
-p1 = "<b>Business Intelligence / Data Analyst</b> con experiencia comprobada en análisis de métricas de fraude en logística para e-commerce y distribución de última milla (Last-Mile Fulfillment), complementada por más de 15 años de sólida trayectoria en el sector bancario, negocios internacionales y finanzas corporativas. Hoy combino esa visión estratégica con un enfoque resolutivo orientado a transformar requerimientos de negocio en soluciones analíticas de alto impacto mediante consultas <b>SQL (MySQL, PostgreSQL)</b>, limpieza de datos y automatización con <b>Python (pandas)</b>, diseño de dashboards ejecutivos en <b>Power BI, Excel y Google Sheets</b>, y analítica digital de productos con <b>GTM, GA4, BigQuery y Data Studio</b>."
+p1 = "<b>BI Developer | Business Intelligence | Data Analyst | Digital Analyst</b> con experiencia comprobada en análisis de métricas de fraude en logística para e-commerce y distribución de última milla (Last-Mile Fulfillment), complementada por más de 15 años de sólida trayectoria en el sector bancario, negocios internacionales y finanzas corporativas. Hoy combino esa visión estratégica con un enfoque resolutivo orientado a transformar requerimientos de negocio en soluciones analíticas de alto impacto mediante consultas <b>SQL (MySQL, PostgreSQL)</b>, limpieza de datos y automatización con <b>Python (pandas)</b>, diseño de dashboards ejecutivos en <b>Power BI, Excel y Google Sheets</b>, y analítica digital de productos con <b>GTM, GA4, BigQuery y Data Studio</b>."
 paragraphs.append(make_p(p1, size=19, align="both", space_after=80))
 
 p2 = "Historial comprobado en optimización de indicadores de negocio, destacando la <b>reducción del 80% en el ratio histórico de siniestralidad por fraude (de 0,150% a 0,030%)</b> en operaciones de alto volumen mediante el monitoreo continuo de métricas. Perfil analítico orientado a la toma de decisiones basada en evidencia y trabajo multidisciplinario con equipos de Producto, Backend y Operaciones."
@@ -162,7 +162,7 @@ paragraphs.append(make_p("Todos los proyectos, modelos de datos y documentación
 # Educación
 paragraphs.append(make_heading("EDUCACIÓN Y FORMACIÓN"))
 paragraphs.append(make_p("• <b>Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial</b> — En curso (Primer Año) — Instituto de Formación Técnica Superior | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
-paragraphs.append(make_p("• <b>Business Intelligence (BI Consulting)</b> — En curso (Segundo cuatrimestre de tres, ruta formativa oficial hacia Análisis de Datos) — Talento Tech | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
+paragraphs.append(make_p("• <b>Business Intelligence (BI Consulting)</b> — Culminado — Talento Tech | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric</b> — En curso — Udemy", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>Licenciatura en Administración de Recursos Materiales y Financieros</b> — Universidad Nacional Experimental Simón Rodríguez | Caracas, Venezuela", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>T.S.U. en Administración de Recursos Físicos y Financieros</b> — Colegio Universitario Fermín Toro | Caracas, Venezuela", size=18, bullet=True, space_after=50))

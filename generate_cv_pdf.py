@@ -179,7 +179,7 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     # PERFIL PROFESIONAL
     story.append(Paragraph("PERFIL PROFESIONAL", styles["SectionTitle"]))
     story.append(hr_section())
-    story.append(Paragraph("<b>Business Intelligence / Data Analyst</b> con experiencia comprobada en análisis de métricas de fraude en logística para e-commerce y distribución de última milla (Last-Mile Fulfillment), complementada por más de 15 años de sólida trayectoria en el sector bancario, negocios internacionales y finanzas corporativas. Hoy combino esa visión estratégica con un enfoque resolutivo orientado a transformar requerimientos de negocio en soluciones analíticas de alto impacto mediante consultas <b>SQL (MySQL, PostgreSQL)</b>, limpieza de datos y automatización con <b>Python (pandas)</b>, diseño de dashboards ejecutivos en <b>Power BI, Excel y Google Sheets</b>, y analítica digital de productos con <b>GTM, GA4, BigQuery y Data Studio</b>.", styles["Body"]))
+    story.append(Paragraph("<b>BI Developer | Business Intelligence | Data Analyst | Digital Analyst</b> con experiencia comprobada en análisis de métricas de fraude en logística para e-commerce y distribución de última milla (Last-Mile Fulfillment), complementada por más de 15 años de sólida trayectoria en el sector bancario, negocios internacionales y finanzas corporativas. Hoy combino esa visión estratégica con un enfoque resolutivo orientado a transformar requerimientos de negocio en soluciones analíticas de alto impacto mediante consultas <b>SQL (MySQL, PostgreSQL)</b>, limpieza de datos y automatización con <b>Python (pandas)</b>, diseño de dashboards ejecutivos en <b>Power BI, Excel y Google Sheets</b>, y analítica digital de productos con <b>GTM, GA4, BigQuery y Data Studio</b>.", styles["Body"]))
     story.append(Spacer(1, 4))
     story.append(Paragraph("Historial comprobado en optimización de indicadores de negocio, destacando la <b>reducción del 80% en el ratio histórico de siniestralidad por fraude (de 0,150% a 0,030%)</b> en operaciones de alto volumen mediante el monitoreo continuo de métricas. Perfil analítico orientado a la toma de decisiones basada en evidencia y trabajo multidisciplinario con equipos de Producto, Backend y Operaciones.", styles["Body"]))
     story.append(Spacer(1, 3))
@@ -263,7 +263,7 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     story.append(hr_section())
     edu = [
         ("Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial", "En curso (Primer Año) — Instituto de Formación Técnica Superior | Ministerio de Educación GCBA"),
-        ("Business Intelligence (BI Consulting)", "En curso (Segundo cuatrimestre de tres, ruta formativa oficial hacia Análisis de Datos) — Talento Tech | Ministerio de Educación GCBA"),
+        ("Business Intelligence (BI Consulting)", "Culminado — Talento Tech | Ministerio de Educación GCBA"),
         ("Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric", "En curso — Udemy"),
         ("Licenciatura en Administración de Recursos Materiales y Financieros", "Universidad Nacional Experimental Simón Rodríguez | Caracas, Venezuela"),
         ("T.S.U. en Administración de Recursos Físicos y Financieros", "Colegio Universitario Fermín Toro | Caracas, Venezuela")
@@ -276,6 +276,7 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     story.append(Paragraph("CERTIFICADOS", styles["SectionTitle"]))
     story.append(hr_section())
     certs = [
+        ("Business Intelligence", "Talento Tech — Ministerio de Educación GCBA"),
         ("Experto en Análisis y Visualización de Datos + IA", "Udemy"),
         ("Analítica Digital: Google Tag Manager, Google Analytics 4 y Data Studio", "Analytics Way"),
         ("Análisis de Datos: Excel, Power BI, SQL y Python", "Datax"),
@@ -320,7 +321,7 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     # PROFILE
     story.append(Paragraph("PROFESSIONAL SUMMARY", styles["SectionTitle"]))
     story.append(hr_section())
-    story.append(Paragraph("<b>Business Intelligence / Data Analyst</b> with over 4 years of experience in data analysis for fraud prevention and operational control in e-commerce and last-mile logistics, and over 15 preceding years in banking and international trade. Development of dashboards in <b>Power BI and Excel</b>, SQL queries (<b>MySQL, PostgreSQL</b>), data cleaning and analysis with <b>Python</b>, data modeling with <b>dbt Core</b>, and digital product analytics with <b>Google Analytics 4, Google Tag Manager, BigQuery, and Looker Studio</b>. Experienced in cross-functional collaboration with Operations, BackEnd, FrontEnd, and QA teams, transforming data into actionable alerts and reports for decision-making.", styles["Body"]))
+    story.append(Paragraph("<b>BI Developer | Business Intelligence | Data Analyst | Digital Analyst</b> with over 4 years of experience in data analysis for fraud prevention and operational control in e-commerce and last-mile logistics, and over 15 preceding years in banking and international trade. Development of dashboards in <b>Power BI and Excel</b>, SQL queries (<b>MySQL, PostgreSQL</b>), data cleaning and analysis with <b>Python</b>, data modeling with <b>dbt Core</b>, and digital product analytics with <b>Google Analytics 4, Google Tag Manager, BigQuery, and Looker Studio</b>. Experienced in cross-functional collaboration with Operations, BackEnd, FrontEnd, and QA teams, transforming data into actionable alerts and reports for decision-making.", styles["Body"]))
     story.append(Spacer(1, 4))
 
     # TECHNICAL SKILLS AND STRENGTHS
@@ -414,7 +415,7 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     story.append(hr_section())
     edu_en = [
         ("Associate Degree in Data Science & Artificial Intelligence", "In Progress (1st Year) — Higher Technical Training Institute | Ministry of Education, City of Buenos Aires (GCBA)"),
-        ("Business Intelligence (BI Consulting)", "In Progress (2nd of 3 terms, official learning path toward Data Analytics) — Talento Tech | Ministry of Education, City of Buenos Aires (GCBA)"),
+        ("Business Intelligence (BI Consulting)", "Completed — Talento Tech | Ministry of Education, City of Buenos Aires (GCBA)"),
         ("Power BI DevOps: PBIP, Git, CI/CD, and Microsoft Fabric", "In Progress — Udemy"),
         ("Bachelor's Degree (Lic.) in Material & Financial Resources Administration", "Simón Rodríguez National Experimental University | Caracas, Venezuela"),
         ("Associate Degree (T.S.U.) in Physical & Financial Resources Administration", "Fermín Toro University College | Caracas, Venezuela")
@@ -427,6 +428,7 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     story.append(Paragraph("CERTIFICATES", styles["SectionTitle"]))
     story.append(hr_section())
     certs_en = [
+        ("Business Intelligence", "Talento Tech — Ministry of Education, City of Buenos Aires (GCBA)"),
         ("Expert in Data Analytics and Data Visualization + AI", "Udemy"),
         ("Digital Analytics: Google Tag Manager, Google Analytics 4, and Data Studio", "Analytics Way"),
         ("Data Analysis: Excel, Power BI, SQL, and Python", "Datax"),
