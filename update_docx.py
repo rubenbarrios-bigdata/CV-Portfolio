@@ -162,8 +162,9 @@ paragraphs.append(make_p("Todos los proyectos, modelos de datos y documentación
 # Educación
 paragraphs.append(make_heading("EDUCACIÓN Y FORMACIÓN"))
 paragraphs.append(make_p("• <b>Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial</b> — En curso (Primer Año) — Instituto de Formación Técnica Superior | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
-paragraphs.append(make_p("• <b>Business Intelligence (BI Consulting)</b> — Culminado — Talento Tech | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric</b> — En curso — Udemy", size=18, bullet=True, space_after=20))
+paragraphs.append(make_p("• <b>Business Intelligence (BI Consulting)</b> — Culminado — Talento Tech | Ministerio de Educación GCBA", size=18, bullet=True, space_after=20))
+paragraphs.append(make_p("• <b>Experto en Análisis y Visualización de Datos + IA</b> — Culminado — Udemy", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>Licenciatura en Administración de Recursos Materiales y Financieros</b> — Universidad Nacional Experimental Simón Rodríguez | Caracas, Venezuela", size=18, bullet=True, space_after=20))
 paragraphs.append(make_p("• <b>T.S.U. en Administración de Recursos Físicos y Financieros</b> — Colegio Universitario Fermín Toro | Caracas, Venezuela", size=18, bullet=True, space_after=50))
 

@@ -3806,7 +3806,7 @@
         <button class="btn-action" id="themeToggleBtn" onclick="toggleTheme()" title="Cambiar a Modo Claro" aria-label="Cambiar a Modo Claro">
             <i class="fas fa-sun" id="themeIcon"></i>
         </button>
-        <a href="CV_Ruben_Barrios_Analista_De_Datos.pdf?v=4.1" download="CV_Ruben_Barrios_Analista_De_Datos.pdf" target="_blank" class="btn-action btn-pdf-action" id="pdfDownloadBtn" onclick="if(typeof trackDocumentDownload==='function') trackDocumentDownload('pdf', 'CV_Ruben_Barrios_Analista_De_Datos.pdf');" title="Descargar CV en PDF" aria-label="Descargar CV en PDF">
+        <a href="CV_Ruben_Barrios_Analista_De_Datos.pdf?v=4.2" download="CV_Ruben_Barrios_Analista_De_Datos.pdf" target="_blank" class="btn-action btn-pdf-action" id="pdfDownloadBtn" onclick="if(typeof trackDocumentDownload==='function') trackDocumentDownload('pdf', 'CV_Ruben_Barrios_Analista_De_Datos.pdf');" title="Descargar CV en PDF" aria-label="Descargar CV en PDF">
             <i class="fas fa-file-pdf"></i>
         </a>
     </div>
@@ -4239,7 +4239,7 @@
                     <div class="cert-controls">
                         <!-- Filtros por categoría -->
                         <div class="cert-filters">
-                            <button class="filter-btn active" id="filterBtnAll" onclick="filterCerts('all', this)">Todos (10)</button>
+                            <button class="filter-btn active" id="filterBtnAll" onclick="filterCerts('all', this)">Todos (11)</button>
                             <button class="filter-btn" id="filterBtnData" onclick="filterCerts('data', this)">Data & BI (5)</button>
                             <button class="filter-btn" id="filterBtnAi" onclick="filterCerts('ia', this)">IA & ML (3)</button>
                             <button class="filter-btn" id="filterBtnProg" onclick="filterCerts('code', this)">Programación (1)</button>
@@ -4277,20 +4277,29 @@
                         </div>
 
                         <div class="edu-card">
-                            <div class="edu-degree" id="eduDeg2">Business Intelligence (BI Consulting)</div>
-                            <div class="edu-school" id="eduSchool2">Talento Tech (Ministerio de Educación GCBA)</div>
+                            <div class="edu-degree" id="eduDeg2">Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric</div>
+                            <div class="edu-school" id="eduSchool2">Udemy</div>
                             <div class="edu-meta">
-                                <span id="eduDate2">2026</span>
-                                <span class="edu-status" id="eduStatus2">Culminado</span>
+                                <span id="eduDate2">2026 - Presente</span>
+                                <span class="edu-status" id="eduStatus2">En Curso</span>
                             </div>
                         </div>
 
                         <div class="edu-card">
-                            <div class="edu-degree" id="eduDeg3">Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric</div>
-                            <div class="edu-school" id="eduSchool3">Udemy</div>
+                            <div class="edu-degree" id="eduDeg3">Business Intelligence (BI Consulting)</div>
+                            <div class="edu-school" id="eduSchool3">Talento Tech (Ministerio de Educación GCBA)</div>
                             <div class="edu-meta">
-                                <span id="eduDate3">2026 - Presente</span>
-                                <span class="edu-status" id="eduStatus3">En Curso</span>
+                                <span id="eduDate3">2026</span>
+                                <span class="edu-status" id="eduStatus3">Culminado</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-degree" id="eduDeg6">Experto en Análisis y Visualización de Datos + IA</div>
+                            <div class="edu-school" id="eduSchool6">Udemy</div>
+                            <div class="edu-meta">
+                                <span id="eduDate6">2026</span>
+                                <span class="edu-status" id="eduStatus6">Culminado</span>
                             </div>
                         </div>
 
@@ -5193,12 +5202,12 @@ function renderProjects(lang = 'es') {
                 image: "certs_images/Certificado Analytics Way Ruben David Barrios Bello (1).png",
                 file: "certs_images/Certificado Analytics Way Ruben David Barrios Bello (1).png",
                 skills: {
-                    es: ["Digital Analytics", "Estrategia de Datos", "KPIs de Negocio"],
-                    en: ["Digital Analytics", "Data Strategy", "Business KPIs"]
+                    es: ["Digital Analytics", "Google Analytics 4 (GA4)", "Google Tag Manager (GTM)", "Data Studio", "Comportamiento de Usuarios", "Embudos de Conversión"],
+                    en: ["Digital Analytics", "Google Analytics 4 (GA4)", "Google Tag Manager (GTM)", "Data Studio", "User Behavior", "Conversion Funnels"]
                 },
                 description: {
-                    es: "Certificación profesional en enfoque estratégico de datos, gobernanza y metodologías analíticas para resolución de problemas de negocio.",
-                    en: "Professional certification in strategic data focus, data governance, and analytical frameworks for business problem solving."
+                    es: "Certificación profesional especializada en Google Analytics 4 (GA4), Google Tag Manager (GTM) y Data Studio (Looker Studio) para proyectos de analítica digital. Formación integral en arquitectura de medición, implementación de tracking de eventos, análisis de embudos de conversión y diagnóstico del comportamiento de usuarios para la optimización de productos digitales.",
+                    en: "Professional certification specialized in Google Analytics 4 (GA4), Google Tag Manager (GTM), and Data Studio (Looker Studio) for digital analytics projects. Comprehensive training in measurement architecture, event tracking implementation, conversion funnel analysis, and user behavior diagnostics to optimize digital products."
                 },
                 verifyUrl: null
             },
@@ -5700,7 +5709,7 @@ function renderProjects(lang = 'es') {
                 themeDarkMob: 'Oscuro',
                 themeLightDesk: 'Claro',
                 themeLightMob: 'Claro',
-                pdfHref: 'CV_Ruben_Barrios_Analista_De_Datos.pdf?v=4.1',
+                pdfHref: 'CV_Ruben_Barrios_Analista_De_Datos.pdf?v=4.2',
                 pdfDownload: 'CV_Ruben_Barrios_Analista_De_Datos.pdf',
                 pdfTitle: 'Descargar CV en PDF',
                 pdfTextDesk: 'PDF',
@@ -5786,14 +5795,18 @@ function renderProjects(lang = 'es') {
                 eduSchool1: 'IFTS N° 11 (Instituto de Formación Técnica Superior)',
                 eduDate1: '2026 - Presente',
                 eduStatus1: 'En Curso (1° Año)',
-                eduDeg2: 'Business Intelligence (BI Consulting)',
-                eduSchool2: 'Talento Tech (Ministerio de Educación GCBA)',
-                eduDate2: '2026',
-                eduStatus2: 'Culminado',
-                eduDeg3: 'Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric',
-                eduSchool3: 'Udemy',
-                eduDate3: '2026 - Presente',
-                eduStatus3: 'En Curso',
+                eduDeg2: 'Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric',
+                eduSchool2: 'Udemy',
+                eduDate2: '2026 - Presente',
+                eduStatus2: 'En Curso',
+                eduDeg3: 'Business Intelligence (BI Consulting)',
+                eduSchool3: 'Talento Tech (Ministerio de Educación GCBA)',
+                eduDate3: '2026',
+                eduStatus3: 'Culminado',
+                eduDeg6: 'Experto en Análisis y Visualización de Datos + IA',
+                eduSchool6: 'Udemy',
+                eduDate6: '2026',
+                eduStatus6: 'Culminado',
                 eduDeg4: 'Lic. en Administración de Recursos Materiales y Financieros',
                 eduSchool4: 'Universidad Nacional Experimental Simón Rodríguez',
                 eduDate4: '2008 - 2012',
@@ -5833,7 +5846,7 @@ function renderProjects(lang = 'es') {
                 themeDarkMob: 'Dark',
                 themeLightDesk: 'Light',
                 themeLightMob: 'Light',
-                pdfHref: 'CV_Ruben_Barrios_Data_Analyst.pdf?v=4.1',
+                pdfHref: 'CV_Ruben_Barrios_Data_Analyst.pdf?v=4.2',
                 pdfDownload: 'CV_Ruben_Barrios_Data_Analyst.pdf',
                 pdfTitle: 'Download Resume in PDF',
                 pdfTextDesk: 'PDF',
@@ -5943,14 +5956,18 @@ function renderProjects(lang = 'es') {
                 eduSchool1: 'IFTS N° 11 (Higher Technical Training Institute)',
                 eduDate1: '2026 - Present',
                 eduStatus1: 'In Progress (1st Year)',
-                eduDeg2: 'Business Intelligence (BI Consulting)',
-                eduSchool2: 'Talento Tech (Ministry of Education GCBA)',
-                eduDate2: '2026',
-                eduStatus2: 'Completed',
-                eduDeg3: 'Power BI DevOps: PBIP, Git, CI/CD and Microsoft Fabric',
-                eduSchool3: 'Udemy',
-                eduDate3: '2026 - Present',
-                eduStatus3: 'In Progress',
+                eduDeg2: 'Power BI DevOps: PBIP, Git, CI/CD and Microsoft Fabric',
+                eduSchool2: 'Udemy',
+                eduDate2: '2026 - Present',
+                eduStatus2: 'In Progress',
+                eduDeg3: 'Business Intelligence (BI Consulting)',
+                eduSchool3: 'Talento Tech (Ministry of Education GCBA)',
+                eduDate3: '2026',
+                eduStatus3: 'Completed',
+                eduDeg6: 'Expert in Data Analytics and Data Visualization + AI',
+                eduSchool6: 'Udemy',
+                eduDate6: '2026',
+                eduStatus6: 'Completed',
                 eduDeg4: 'Bachelor in Material & Financial Resources Administration',
                 eduSchool4: 'Universidad Nacional Experimental Simón Rodríguez',
                 eduDate4: '2008 - 2012',
@@ -6212,7 +6229,7 @@ function renderProjects(lang = 'es') {
             }
 
             const filterAll = document.getElementById('filterBtnAll');
-            if (filterAll) filterAll.innerText = `${t.filterAll} (10)`;
+            if (filterAll) filterAll.innerText = `${t.filterAll} (11)`;
 
             const filterData = document.getElementById('filterBtnData');
             if (filterData) filterData.innerText = t.filterData;
@@ -6232,6 +6249,7 @@ function renderProjects(lang = 'es') {
                 'eduDeg1', 'eduSchool1', 'eduDate1', 'eduStatus1',
                 'eduDeg2', 'eduSchool2', 'eduDate2', 'eduStatus2',
                 'eduDeg3', 'eduSchool3', 'eduDate3', 'eduStatus3',
+                'eduDeg6', 'eduSchool6', 'eduDate6', 'eduStatus6',
                 'eduDeg4', 'eduSchool4', 'eduDate4', 'eduStatus4',
                 'eduDeg5', 'eduSchool5', 'eduDate5', 'eduStatus5'
             ];

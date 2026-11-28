@@ -263,8 +263,9 @@ def build_pdf_es(filename="CV_Ruben_Barrios_Analista_De_Datos.pdf"):
     story.append(hr_section())
     edu = [
         ("Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial", "En curso (Primer Año) — Instituto de Formación Técnica Superior | Ministerio de Educación GCBA"),
-        ("Business Intelligence (BI Consulting)", "Culminado — Talento Tech | Ministerio de Educación GCBA"),
         ("Power BI DevOps: PBIP, Git, CI/CD y Microsoft Fabric", "En curso — Udemy"),
+        ("Business Intelligence (BI Consulting)", "Culminado — Talento Tech | Ministerio de Educación GCBA"),
+        ("Experto en Análisis y Visualización de Datos + IA", "Culminado — Udemy"),
         ("Licenciatura en Administración de Recursos Materiales y Financieros", "Universidad Nacional Experimental Simón Rodríguez | Caracas, Venezuela"),
         ("T.S.U. en Administración de Recursos Físicos y Financieros", "Colegio Universitario Fermín Toro | Caracas, Venezuela")
     ]
@@ -415,8 +416,9 @@ def build_pdf_en(filename="CV_Ruben_Barrios_Data_Analyst.pdf"):
     story.append(hr_section())
     edu_en = [
         ("Associate Degree in Data Science & Artificial Intelligence", "In Progress (1st Year) — Higher Technical Training Institute | Ministry of Education, City of Buenos Aires (GCBA)"),
-        ("Business Intelligence (BI Consulting)", "Completed — Talento Tech | Ministry of Education, City of Buenos Aires (GCBA)"),
         ("Power BI DevOps: PBIP, Git, CI/CD, and Microsoft Fabric", "In Progress — Udemy"),
+        ("Business Intelligence (BI Consulting)", "Completed — Talento Tech | Ministry of Education, City of Buenos Aires (GCBA)"),
+        ("Expert in Data Analytics and Data Visualization + AI", "Completed — Udemy"),
         ("Bachelor's Degree (Lic.) in Material & Financial Resources Administration", "Simón Rodríguez National Experimental University | Caracas, Venezuela"),
         ("Associate Degree (T.S.U.) in Physical & Financial Resources Administration", "Fermín Toro University College | Caracas, Venezuela")
     ]
